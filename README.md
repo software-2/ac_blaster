@@ -3,6 +3,8 @@ Turn a NodeMCU into a remote control for my Sharp portable air conditioner. The 
 
 This is a pretty simple project, and can easily be modified into a remote control for any IR-based device.
 
+![Behold! A project box and breadboard way too big for what's basically a glorified LED blinker.](https://github.com/software-2/ac_blaster/blob/master/photo.jpg?raw=true)
+
 ## MQTT Commands
 - `ac/on` *(no payload)* - Turns the machine on, waits a couple seconds, then kicks on the full max cool mode. Because it's hot and I want it cold now!
 - `ac/off` *(no payload)* - Shut it down! Shut it all down!
