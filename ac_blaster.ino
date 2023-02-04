@@ -13,7 +13,6 @@ EspMQTTClient client(
    // MQTT port
 );
 
-
 const uint16_t kIrLed = D2;
 
 const uint16_t kHz = 38; //From AC.ir
@@ -101,15 +100,9 @@ void onConnectionEstablished() {
   client.subscribe("ac/off", [] (const String &payload)  {
     irsend.sendRaw(acOff, 211, kHz);
   });
-
-  //client.publish("waaa", "This is a message");
 }
 
 
 void loop() {
   client.loop();
-
-  //irsend.sendRaw(acOn, 211, kHz);
-  
-
 }
