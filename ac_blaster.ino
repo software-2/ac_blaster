@@ -1,6 +1,18 @@
 #include <Arduino.h>
 #include <IRremoteESP8266.h>
 #include <IRsend.h>
+#include "EspMQTTClient.h"
+
+EspMQTTClient client(
+  "",  //wifi ssid
+  "",  //wifi password
+  "",  // MQTT Broker server ip
+  "",   // MQTTUsername
+  "",   // MQTTPassword
+  "",      // Client name
+   // MQTT port
+);
+
 
 const uint16_t kIrLed = D2;
 
@@ -34,11 +46,27 @@ void setup() {
 #else  // ESP8266
   Serial.begin(115200, SERIAL_8N1);
 #endif  // ESP8266
+
+  Serial.println("setup done");
 }
 
-void loop() {
 
-  irsend.sendRaw(acOn, 211, kHz);
-  delay(5000);
+void onConnectionEstablished() {
+
+  client.subscribe("mytopic/test", [] (const String &payload)  {
+    Serial.println(payload);
+    irsend.sendRaw(acOn, 211, kHz);
+  });
+
+  client.publish("waaa", "This is a message");
+  Serial.println("sent payload");
+}
+
+
+void loop() {
+  client.loop();
+
+  //irsend.sendRaw(acOn, 211, kHz);
+  
 
 }
