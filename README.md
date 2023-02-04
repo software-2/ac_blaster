@@ -28,6 +28,8 @@ This is a pretty simple project, and can easily be modified into a remote contro
 - Transistor collector to LED negative
 - LED positive to 3.3v
 
+Since I wanted the LED to sit right next to the AC's IR receiver, I extended the LED out with some extra wire and a JST connector.
+
 ## Collecting IR data
 I used a Flipper Zero to record my original remote's IR data. The unedited data is in captures/ac_blaster.ir
 
