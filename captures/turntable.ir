@@ -1,0 +1,92 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: startstop
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 42 BD 00 00
+# 
+name: faster
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 0A F5 00 00
+# 
+name: slower
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 43 BC 00 00
+# 
+name: cw
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 44 BB 00 00
+# 
+name: ccw
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 41 BE 00 00
+# 
+name: 01deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 51 AE 00 00
+# 
+name: 05deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 4F B0 00 00
+# 
+name: 164deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 4E B1 00 00
+# 
+name: 148deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 4D B2 00 00
+# 
+name: 132deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 47 B8 00 00
+# 
+name: 116deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 03 FC 00 00
+# 
+name: 18deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 02 FD 00 00
+# 
+name: 14deg
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 1B E4 00 00
+# 
+name: set_origin
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 48 B7 00 00
+# 
+name: return_origin
+type: parsed
+protocol: NECext
+address: 00 DF 00 00
+command: 01 FE 00 00

@@ -24,10 +24,12 @@ This is a pretty simple project, and can easily be modified into a remote contro
 - Wire, solder, shrink wrap.
 
 ## Case
-- I made a simple case here: https://www.printables.com/model/389019-gikfun-breadboard-project-enclosure-box
+- Small case for just a wide NodeMCU: https://www.printables.com/model/659576-small-project-box-for-lol1n-esp8266-nodemcu-lolin-
+- Larger case for holdikng a breadboard too: https://www.printables.com/model/389019-gikfun-breadboard-project-enclosure-box
+
 
 ## Assembly
-- Transistor emitter to ground
+- Transistor emitter to ground (Flat on top, pins pointed down, left to right, pinout is: Emitter, Base, Collector)
 - Transistor base to D2 
 - Transistor collector to LED negative
 - LED positive to 3.3v
