@@ -19,6 +19,7 @@ This is a pretty simple project, and can easily be modified into a remote contro
 - USB-C to Micro adapter - https://www.amazon.com/gp/product/B07VBV1PY5
     - lol, this costs more than the computer with wifi built in
 - An IR LED. I actually used a red one and it worked for my AC - https://www.amazon.com/gp/product/B077J2WJRS
+- 100 ohm resistor.
 - 2N2222 transistor - https://www.amazon.com/gp/product/B07222XY81
 - 2 pin JST connector - https://www.amazon.com/gp/product/B07CTH46S7
 - Wire, solder, shrink wrap.
@@ -32,7 +33,7 @@ This is a pretty simple project, and can easily be modified into a remote contro
 - Transistor emitter to ground (Flat on top, pins pointed down, left to right, pinout is: Emitter, Base, Collector)
 - Transistor base to D2 
 - Transistor collector to LED negative
-- LED positive to 3.3v
+- LED positive to resistor to 3.3v
 
 Since I wanted the LED to sit right next to the AC's IR receiver, I extended the LED out with some extra wire and a JST connector.
 
